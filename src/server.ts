@@ -2,10 +2,13 @@ import express from 'express';
 import dotenv from 'dotenv';
 import mustache from 'mustache-express';
 import path from 'path';
+import router from './routes';
 
 dotenv.config();
 
 const server = express();
+
+server.use(router);
 
 server.set('view engine', 'mustache');
 server.set('views', path.join(__dirname, 'views'));
