@@ -107,12 +107,21 @@ h2 {
 
 .item {
   color: var(--lightbg);
+
+}
+
+.item:hover {
+  cursor: pointer;
 }
 
 .item--image {
   width: 100%;
   height: auto;
   border-radius: 5px;
+}
+
+.item--image:hover {
+  cursor: pointer;
 }
 
 .item--name {

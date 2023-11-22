@@ -139,7 +139,7 @@ export const Pet = {
     return data.filter(item => item.type === type);
   },
   getFromName: (name: string): Pet[] => {
-    return data.filter(item => item.name.includes(name));
+    return data.filter(item => item.name.toLowerCase().includes(name.toLowerCase()));
 
   }
 };
